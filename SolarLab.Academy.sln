@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{5CDEDC08-9447-4EA3-BA08-AC92B6E8DE2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLab.Academy.AppServices", "Application\AppServices\SolarLab.Academy.AppServices.csproj", "{8016AEA8-86C6-4F9A-A6C1-EDE6B3F8CB47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{9E30DA98-4D9E-46ED-99EE-2401B7A414BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F748A56D-19BE-45BE-87EB-EFBE7E963673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FF028E34-D3F2-43CB-99B9-87B47A9F3D99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{A1702093-0D58-45AF-9D56-8E8E469F91B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLab.Academy.Contracts", "Contracts\SolarLab.Academy.Contracts\SolarLab.Academy.Contracts.csproj", "{F7898C7C-4DBA-4C3D-B3E1-BFE599DEE78A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLab.Academy.Domain", "Domain\SolarLab.Academy.Domain\SolarLab.Academy.Domain.csproj", "{D03E78C4-B6E0-4CDF-B0B5-EC13E2A39923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLab.Academy.Infrastructure", "Infrastructure\SolarLab.Academy.Infrastructure\SolarLab.Academy.Infrastructure.csproj", "{B31DEC85-74B1-49E9-9568-73BD10F82EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLab.Academy.ComponentRegistrar", "Infrastructure\SolarLab.Academy.ComponentRegistrar\SolarLab.Academy.ComponentRegistrar.csproj", "{E45104FA-B1F1-4322-A4B6-E2DAC801AB98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLab.Academy.Api", "Hosts\SolarLab.Academy.Api\SolarLab.Academy.Api.csproj", "{428611E5-00DD-4247-BADE-C4158844086A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarLab.Academy.DataAccess", "Infrastructure\SolarLab.Academy.DataAccess\SolarLab.Academy.DataAccess.csproj", "{8A436D4F-1367-4AEB-B5B2-83C4945C2DB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8016AEA8-86C6-4F9A-A6C1-EDE6B3F8CB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8016AEA8-86C6-4F9A-A6C1-EDE6B3F8CB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8016AEA8-86C6-4F9A-A6C1-EDE6B3F8CB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8016AEA8-86C6-4F9A-A6C1-EDE6B3F8CB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7898C7C-4DBA-4C3D-B3E1-BFE599DEE78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7898C7C-4DBA-4C3D-B3E1-BFE599DEE78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7898C7C-4DBA-4C3D-B3E1-BFE599DEE78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7898C7C-4DBA-4C3D-B3E1-BFE599DEE78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03E78C4-B6E0-4CDF-B0B5-EC13E2A39923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03E78C4-B6E0-4CDF-B0B5-EC13E2A39923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03E78C4-B6E0-4CDF-B0B5-EC13E2A39923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03E78C4-B6E0-4CDF-B0B5-EC13E2A39923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31DEC85-74B1-49E9-9568-73BD10F82EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31DEC85-74B1-49E9-9568-73BD10F82EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31DEC85-74B1-49E9-9568-73BD10F82EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31DEC85-74B1-49E9-9568-73BD10F82EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E45104FA-B1F1-4322-A4B6-E2DAC801AB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E45104FA-B1F1-4322-A4B6-E2DAC801AB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E45104FA-B1F1-4322-A4B6-E2DAC801AB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E45104FA-B1F1-4322-A4B6-E2DAC801AB98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428611E5-00DD-4247-BADE-C4158844086A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428611E5-00DD-4247-BADE-C4158844086A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428611E5-00DD-4247-BADE-C4158844086A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428611E5-00DD-4247-BADE-C4158844086A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A436D4F-1367-4AEB-B5B2-83C4945C2DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A436D4F-1367-4AEB-B5B2-83C4945C2DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A436D4F-1367-4AEB-B5B2-83C4945C2DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A436D4F-1367-4AEB-B5B2-83C4945C2DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8016AEA8-86C6-4F9A-A6C1-EDE6B3F8CB47} = {5CDEDC08-9447-4EA3-BA08-AC92B6E8DE2E}
+		{F7898C7C-4DBA-4C3D-B3E1-BFE599DEE78A} = {9E30DA98-4D9E-46ED-99EE-2401B7A414BF}
+		{D03E78C4-B6E0-4CDF-B0B5-EC13E2A39923} = {F748A56D-19BE-45BE-87EB-EFBE7E963673}
+		{B31DEC85-74B1-49E9-9568-73BD10F82EC5} = {FF028E34-D3F2-43CB-99B9-87B47A9F3D99}
+		{E45104FA-B1F1-4322-A4B6-E2DAC801AB98} = {FF028E34-D3F2-43CB-99B9-87B47A9F3D99}
+		{428611E5-00DD-4247-BADE-C4158844086A} = {A1702093-0D58-45AF-9D56-8E8E469F91B2}
+		{8A436D4F-1367-4AEB-B5B2-83C4945C2DB2} = {FF028E34-D3F2-43CB-99B9-87B47A9F3D99}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69A16A1B-E234-4B4E-B234-E536348174CE}
+	EndGlobalSection
+EndGlobal
