@@ -1,8 +1,11 @@
 ﻿using SolarLab.Academy.AppServices.Users.AppServices;
 using SolarLab.Academy.AppServices.Users.Repositories;
+using SolarLab.Academy.AppServices.Validators;
 using SolarLab.Academy.Contracts.User;
+using SolarLab.Academy.Contracts.Users;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +28,18 @@ public class UserService : IUserService
     /// <inherictdoc />
     public Task<IEnumerable<UserDto>> GetUsersAsync(CancellationToken cancellationToken)
     {
+        //CreateUserValidator createUserValidator = new CreateUserValidator();
+        //ValidationResult validationResult = createUserValidator.Validate(new CreateUserRequest());
         return _userRepository.GetaAll(cancellationToken);
     }
+
+    //public Task<UserDto> CreateUserAsync(CreateUserRequest request)
+    //{
+    //    var user = _userRepository.Get();
+
+    //    if(user != null)
+    //    {
+    //        throw new AlreadyExsistException();
+    //    }
+    //}
 }

@@ -34,4 +34,9 @@ public class UserDto
     /// Полное имя
     /// </summary>
     public string FullName { get; set; }
+
+    /// <summary>
+    /// Дата рождения
+    /// </summary>
+    public DateTime BirthDate { get; set; }
 }

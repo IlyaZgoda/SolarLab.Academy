@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using SolarLab.Academy.AppServices.Users.AppServices;
+using SolarLab.Academy.Contracts.User;
+using SolarLab.Academy.Contracts.Users;
+using System.Net;
 
 namespace SolarLab.Academy.Api.Controllers;
 
@@ -8,17 +12,15 @@ namespace SolarLab.Academy.Api.Controllers;
 /// </summary>
 [ApiController]
 [Route("[controller]")]
+[ProducesResponseType((int)HttpStatusCode.InternalServerError)]
 public class UserController : ControllerBase
 {
-    private readonly IUserService _userService;
-
     /// <summary>
     /// Инициализирует экземпляр <see cref="UserController"/>
     /// </summary>
-    /// <param name="userService">Сервис работы с пользователем</param>
-    public UserController(IUserService userService)
+    public UserController()
     {
-        _userService = userService;
+        
     }
 
     /// <summary>
@@ -28,10 +30,25 @@ public class UserController : ControllerBase
     /// <returns>список пользователей</returns>
     [HttpGet]
     [Route("all")]
+    [ProducesResponseType(typeof(UserDto), (int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.NotFound)]   
     public async Task<IActionResult> GetAllUsers(CancellationToken cancellationToken)
     {
-        var result = await _userService.GetUsersAsync(cancellationToken);
+        //var result = await _userService.GetUsersAsync(cancellationToken);
 
-        return Ok(result);
+        return Ok(new UserDto());
+    }
+    /// <summary>
+    /// Создать пользователя
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    [HttpPost]
+    [ProducesResponseType(typeof(UserDto), (int)HttpStatusCode.Created)]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+    public async Task<IActionResult> CreateUser(CreateUserRequest request, CancellationToken cancellationToken)
+    {
+        return Created(new Uri($"{Request.Path}/1", UriKind.Relative), new UserDto());
     }
 }
